@@ -1,0 +1,29 @@
+[aimspice]
+[description]
+287
+Linearity Test
+
+.include nmos_model.cir
+.include pmos_model.cir
+
+VSup   VDD    0   dc 5V
+V1     Vin    0   dc 1V
+
+M3   0         Vin    N3     VDD    pm w=8u     l=0.8u
+M4   VOUT      0      N3     VDD    pm w=2u      l=1u
+MC1  VOUT      VOUT   VDD    VDD    pm w=0.5u    l=30u
+[dc]
+1
+V1
+0
+5
+0.1
+[ana]
+1 1
+0
+1 1
+1 1 0 5
+2
+v(vin)
+v(vout)
+[end]

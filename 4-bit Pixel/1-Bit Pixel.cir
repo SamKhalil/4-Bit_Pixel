@@ -1,0 +1,51 @@
+[aimspice]
+[description]
+642
+1-Bit Pixel circuit
+
+.lib photodiode.cir
+.include nmos_model.cir
+.include pmos_model.cir
+
+Xphoto1 N1_R1C1 photodiode
+
+.param Wm1=3u
+.param Lm1=0.8u
+
+M1   N1_R1C1   EXPOSE N2     0      nm w=Wm1   l=Lm1
+M2   N2        ERASE  0      0      nm w=Wm1   l=Lm1
+M3   0         N2     N3     VDD    pm w=10u   l=0.8u
+M4   N3        VDD    VOUT   VDD    pm w=Wm1   l=Lm1
+MC1  VOUT      VOUT   VDD    VDD    pm w=2u    l=10u
+CS   N2        0      1.76pf IC=0V
+Cc1  VOUT      0      3pf    IC=0V
+
+Vin     VDD    0   dc 5V
+V_NHOLD EXPOSE 0 PULSE(0 5 1ms 0.1ms 0.1ms 30ms 100ms)
+V_RESET ERASE  0 PULSE(0 5 40ms 0.1ms 0.1ms 50ms 100ms)
+[dc]
+1
+Vin
+0
+5
+0.1
+[tran]
+0.1ms
+200ms
+X
+X
+0
+[ana]
+4 1
+0
+1 1
+1 1 0 5
+7
+v(n1_r1c1)
+v(expose)
+v(n2)
+v(erase)
+v(n3)
+v(vdd)
+v(vout)
+[end]
