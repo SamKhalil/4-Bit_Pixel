@@ -1,0 +1,1 @@
+ -erf "c:\My_Designs\digi_cam\digi_cam\compile\digi_cam.erf" -work digi_cam -lc c:/My_Designs/digi_cam/library.cfg -fl c:/My_Designs/digi_cam/digi_cam/projlib.cfg -o c:/My_Designs/digi_cam/digi_cam/compile -l "digi_cam" -sve   -O2

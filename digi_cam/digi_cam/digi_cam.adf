@@ -1,0 +1,60 @@
+[Project]
+Current Flow=Generic
+VCS=0
+version=3
+Current Config=compile
+
+[Configurations]
+compile=digi_cam
+
+[Library]
+digi_cam=.\digi_cam.LIB
+
+[Settings]
+AccessRead=0
+AccessReadWrite=0
+AccessACCB=0
+AccessACCR=0
+AccessReadWriteSLP=1
+AccessReadTopLevel=1
+DisableC=1
+ENABLE_ADV_DATAFLOW=0
+FLOW_TYPE=HDL
+LANGUAGE=VERILOG
+REFRESH_FLOW=1
+FLOWTOOLS=NONE
+FAMILY=
+SimulationAccessReadModules=
+SimulationAccessReadWriteModules=
+SimulationAccessReadPaths=
+SimulationAccessReadWritePaths=
+SimulationAccessNetsPaths=
+SimulationAccessNetsModules=+m+RE_control, +m+RE_control_TB
+
+[LocalVerilogSets]
+EnableSLP=1
+EnableDebug=0
+
+[LocalVhdlSets]
+CompileWithDebug=0
+
+[$LibMap$]
+digi_cam=.
+Active_lib=
+
+[HierarchyViewer]
+SortInfo=u
+HierarchyInformation=
+ShowHide=ShowTopLevel
+Selected=
+
+[Files]
+/RE_control.v=-1
+/RE_control_TB.v=-1
+/RE_control_TB_sim.awc=-1
+
+[Files.Data]
+.\src\RE_control.v=Verilog Source Code
+.\src\RE_control_TB.v=Verilog Source Code
+
+.\src\RE_control_TB_sim.awc=Accelerated Waveform Configuration

@@ -1,0 +1,24 @@
+Active-HDL 9.1.2354.4209  2013-11-16 21:24:14
+
+Elaboration top modules:
+Verilog Module                RE_control_TB
+
+
+-------------------------------------------------------------------------------------------
+Verilog Module          | Library  | Info | Compiler Version         | Compilation Options
+-------------------------------------------------------------------------------------------
+RE_control_TB           | digi_cam |      | 9.1.2354.4209  (Windows) | -l digi_cam -O2
+RE_control              | digi_cam |      | 9.1.2354.4209  (Windows) | -l digi_cam -O2
+-------------------------------------------------------------------------------------------
+
+-------------------------------------------------------------------------------------------
+Library                 | Comment
+-------------------------------------------------------------------------------------------
+digi_cam                | None
+-------------------------------------------------------------------------------------------
+
+
+Simulation Options: asim -O5 +access +w_nets +m+RE_control, +m+RE_control_TB +access +r +m+RE_control_TB RE_control_TB
+
+
+The performance of simulation is reduced. Version Student Edition

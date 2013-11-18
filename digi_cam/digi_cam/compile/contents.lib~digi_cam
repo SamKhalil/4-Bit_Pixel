@@ -1,0 +1,7 @@
+1356
+~M 0 "" 0 $root
+~A 1 "" 0 $root
+~M 1 "./src/RE_control.v" 24 RE_control
+~A 1 "./src/RE_control.v" 24 RE_control
+~M 3 "./src/RE_control_TB.v" 22 RE_control_TB
+~A 1 "./src/RE_control_TB.v" 22 RE_control_TB

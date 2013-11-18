@@ -1,0 +1,686 @@
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+alog -O2 -sve  -work digi_cam $dsn/src/RE_control.v $dsn/src/RE_control_TB.v
+# Warning: The source is compiled without the -dbg switch. Line breakpoints and code coverage will not be available.
+# Compile...
+# Pass 1. Scanning modules hierarchy.
+# Info: VCP2113 Module \$root found in current working library.
+# Pass 2. Processing instantiations.
+# Pass 3. Processing behavioral statements.
+# Parameters in case labels, will not check for overlapping labels (c:/My_Designs/digi_cam/digi_cam/src/RE_control.v, ln 69).
+# Parameters in case labels, will not check for overlapping labels (c:/My_Designs/digi_cam/digi_cam/src/RE_control.v, ln 176).
+# Running Optimizer.
+# ELB/DAG code generating.
+# Info: VCP2113 Module \$root found in current working library.
+# Unit top modules: RE_control_TB.
+# $root top modules: RE_control_TB.
+# Compile success 0 Errors 0 Warnings  Analysis time: 1[s].
+# done
+asim -O5 +access +w_nets +m+RE_control, +m+RE_control_TB +access +r +m+RE_control_TB RE_control_TB
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# asim: Stack memory: 32MB
+# asim: Retval memory: 32MB
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Warning: RE_control_TB.v (26): Length of connection (1) does not match the length of port 'EX_time' (5) on instance '/RE_control_TB/U0'.
+# SLP: Elaboration phase ... done : 0.2 [s]
+# SLP: Generation phase ...
+# SLP: Generation phase ... done : 2.0 [s]
+# SLP: Finished : 2.4 [s]
+# SLP: 0 primitives and 7 (100.00%) other processes in SLP
+# SLP: 16 (55.17%) signals in SLP and 13 (44.83%) interface signals
+# ELAB2: Elaboration final pass complete - time: 2.4 [s].
+# KERNEL: SLP loading done - time: 0.1 [s].
+# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: SLP simulation initialization done - time: 0.0 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 5743 kB (elbread=1023 elab2=4629 kernel=89 sdf=0)
+# KERNEL: ASDB file was created in location c:\My_Designs\digi_cam\digi_cam\src\wave.asdb
+#  9:18 PM, Saturday, 16 November 2013
+#  Simulation has been initialized
+#  Selected Top-Level: RE_control_TB (RE_control_TB)
+# 13 signal(s) traced.
+run @25ms
+# KERNEL: 		clk, 		reset, 		init, 		exp_inc, 		exp_dec, 		NRE_1, 		NRE_2, 		ADC, 		Expose, 		Erase, 		ovf4, 		ovf5, 		EX_time
+# KERNEL:                    0, 	1, 	0, 	0, 	0, 	0, 	x, 	x, 	x, 	x, 	x, 	0, 	0, 	1
+# KERNEL:                    1, 	0, 	0, 	0, 	0, 	0, 	x, 	x, 	x, 	x, 	x, 	0, 	0, 	1
+# KERNEL:                    1, 	1, 	0, 	0, 	0, 	0, 	1, 	1, 	0, 	0, 	1, 	0, 	0, 	1
+# KERNEL:                    2, 	0, 	0, 	0, 	0, 	0, 	1, 	1, 	0, 	0, 	1, 	0, 	0, 	1
+# KERNEL:                    2, 	1, 	0, 	0, 	0, 	0, 	1, 	1, 	0, 	0, 	1, 	0, 	0, 	1
+# KERNEL:                    3, 	0, 	0, 	0, 	0, 	0, 	1, 	1, 	0, 	0, 	1, 	0, 	0, 	1
+# KERNEL:                    3, 	1, 	0, 	0, 	0, 	0, 	1, 	1, 	0, 	0, 	1, 	0, 	0, 	1
+# KERNEL:                    4, 	0, 	0, 	0, 	0, 	0, 	1, 	1, 	0, 	0, 	1, 	0, 	0, 	1
+# KERNEL:                    4, 	1, 	0, 	0, 	0, 	0, 	1, 	1, 	0, 	0, 	1, 	0, 	0, 	1
+# KERNEL:                    5, 	0, 	0, 	0, 	0, 	0, 	1, 	1, 	0, 	0, 	1, 	0, 	0, 	1
+# KERNEL:                    5, 	1, 	0, 	1, 	0, 	0, 	1, 	1, 	0, 	0, 	1, 	0, 	0, 	1
+# KERNEL:                    6, 	0, 	0, 	1, 	0, 	0, 	1, 	1, 	0, 	0, 	1, 	0, 	0, 	1
+# KERNEL:                    6, 	1, 	0, 	0, 	0, 	0, 	1, 	1, 	0, 	0, 	1, 	0, 	0, 	1
+# KERNEL:                    7, 	0, 	0, 	0, 	0, 	0, 	1, 	1, 	0, 	0, 	1, 	0, 	0, 	1
+# KERNEL:                    7, 	1, 	0, 	0, 	0, 	0, 	1, 	1, 	0, 	1, 	0, 	0, 	0, 	1
+# KERNEL:                    8, 	0, 	0, 	0, 	0, 	0, 	1, 	1, 	0, 	1, 	0, 	0, 	0, 	1
+# KERNEL:                    8, 	1, 	0, 	0, 	0, 	0, 	1, 	1, 	0, 	1, 	0, 	0, 	0, 	1
+# KERNEL:                    9, 	0, 	0, 	0, 	0, 	0, 	1, 	1, 	0, 	1, 	0, 	0, 	0, 	1
+# KERNEL:                    9, 	1, 	0, 	0, 	0, 	0, 	1, 	1, 	0, 	1, 	0, 	0, 	0, 	1
+# KERNEL:                   10, 	0, 	0, 	0, 	0, 	0, 	1, 	1, 	0, 	1, 	0, 	0, 	0, 	1
+# KERNEL:                   10, 	1, 	0, 	0, 	0, 	0, 	1, 	1, 	0, 	1, 	0, 	0, 	1, 	1
+# KERNEL:                   11, 	0, 	0, 	0, 	0, 	0, 	1, 	1, 	0, 	1, 	0, 	0, 	1, 	1
+# KERNEL:                   11, 	1, 	0, 	0, 	0, 	0, 	1, 	1, 	0, 	0, 	0, 	0, 	1, 	1
+# KERNEL:                   12, 	0, 	0, 	0, 	0, 	0, 	1, 	1, 	0, 	0, 	0, 	0, 	1, 	1
+# KERNEL:                   12, 	1, 	0, 	0, 	0, 	0, 	0, 	1, 	0, 	0, 	0, 	0, 	0, 	1
+# KERNEL:                   13, 	0, 	0, 	0, 	0, 	0, 	0, 	1, 	0, 	0, 	0, 	0, 	0, 	1
+# KERNEL:                   13, 	1, 	0, 	0, 	0, 	0, 	0, 	1, 	1, 	0, 	0, 	0, 	0, 	1
+# KERNEL:                   14, 	0, 	0, 	0, 	0, 	0, 	0, 	1, 	1, 	0, 	0, 	0, 	0, 	1
+# KERNEL:                   14, 	1, 	0, 	0, 	0, 	0, 	0, 	1, 	0, 	0, 	0, 	0, 	0, 	1
+# KERNEL:                   15, 	0, 	0, 	0, 	0, 	0, 	0, 	1, 	0, 	0, 	0, 	0, 	0, 	1
+# KERNEL:                   15, 	1, 	0, 	0, 	0, 	0, 	1, 	1, 	0, 	0, 	0, 	0, 	1, 	1
+# KERNEL:                   16, 	0, 	0, 	0, 	0, 	0, 	1, 	1, 	0, 	0, 	0, 	0, 	1, 	1
+# KERNEL:                   16, 	1, 	0, 	0, 	0, 	0, 	1, 	0, 	0, 	0, 	0, 	0, 	1, 	1
+# KERNEL:                   17, 	0, 	0, 	0, 	0, 	0, 	1, 	0, 	0, 	0, 	0, 	0, 	1, 	1
+# KERNEL:                   17, 	1, 	0, 	0, 	0, 	0, 	1, 	0, 	1, 	0, 	0, 	0, 	1, 	1
+# KERNEL:                   18, 	0, 	0, 	0, 	0, 	0, 	1, 	0, 	1, 	0, 	0, 	0, 	1, 	1
+# KERNEL:                   18, 	1, 	0, 	0, 	0, 	0, 	1, 	0, 	0, 	0, 	0, 	0, 	1, 	1
+# KERNEL:                   19, 	0, 	0, 	0, 	0, 	0, 	1, 	0, 	0, 	0, 	0, 	0, 	1, 	1
+# KERNEL:                   19, 	1, 	0, 	0, 	0, 	0, 	1, 	1, 	0, 	0, 	0, 	1, 	1, 	1
+# KERNEL:                   20, 	0, 	0, 	0, 	0, 	0, 	1, 	1, 	0, 	0, 	0, 	1, 	1, 	1
+# KERNEL:                   20, 	1, 	0, 	0, 	0, 	0, 	1, 	1, 	0, 	0, 	1, 	1, 	1, 	1
+# KERNEL:                   21, 	0, 	0, 	0, 	0, 	0, 	1, 	1, 	0, 	0, 	1, 	1, 	1, 	1
+# KERNEL:                   21, 	1, 	0, 	0, 	0, 	0, 	1, 	1, 	0, 	0, 	1, 	0, 	0, 	1
+# KERNEL:                   22, 	0, 	0, 	0, 	0, 	0, 	1, 	1, 	0, 	0, 	1, 	0, 	0, 	1
+# KERNEL:                   22, 	1, 	0, 	0, 	0, 	0, 	1, 	1, 	0, 	0, 	1, 	0, 	0, 	1
+# KERNEL:                   23, 	0, 	0, 	0, 	0, 	0, 	1, 	1, 	0, 	0, 	1, 	0, 	0, 	1
+# KERNEL:                   23, 	1, 	0, 	0, 	0, 	0, 	1, 	1, 	0, 	0, 	1, 	0, 	0, 	1
+# KERNEL:                   24, 	0, 	0, 	0, 	0, 	0, 	1, 	1, 	0, 	0, 	1, 	0, 	0, 	1
+# KERNEL:                   24, 	1, 	0, 	0, 	0, 	0, 	1, 	1, 	0, 	0, 	1, 	0, 	0, 	1
+# KERNEL:                   25, 	0, 	0, 	0, 	0, 	0, 	1, 	1, 	0, 	0, 	1, 	0, 	0, 	1
+# KERNEL:                   25, 	1, 	0, 	0, 	0, 	0, 	1, 	1, 	0, 	0, 	1, 	0, 	0, 	1
+# KERNEL: stopped at time: 25 ms
+alog -O2 -sve  -work digi_cam $dsn/src/RE_control.v $dsn/src/RE_control_TB.v
+# Warning: The source is compiled without the -dbg switch. Line breakpoints and code coverage will not be available.
+# Compile...
+# Pass 1. Scanning modules hierarchy.
+# Info: VCP2113 Module \$root found in current working library.
+# Pass 2. Processing instantiations.
+# Pass 3. Processing behavioral statements.
+# Parameters in case labels, will not check for overlapping labels (c:/My_Designs/digi_cam/digi_cam/src/RE_control.v, ln 69).
+# Parameters in case labels, will not check for overlapping labels (c:/My_Designs/digi_cam/digi_cam/src/RE_control.v, ln 176).
+# Running Optimizer.
+# ELB/DAG code generating.
+# Info: VCP2113 Module \$root found in current working library.
+# Unit top modules: RE_control_TB.
+# $root top modules: RE_control_TB.
+# Compile success 0 Errors 0 Warnings  Analysis time: 1[s].
+# done
+endsim
+#  Simulation has been stopped
+asim -O5 +access +w_nets +m+RE_control, +m+RE_control_TB +access +r +m+RE_control_TB RE_control_TB
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# asim: Stack memory: 32MB
+# asim: Retval memory: 32MB
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... done : 0.2 [s]
+# SLP: Generation phase ...
+# SLP: Generation phase ... done : 1.4 [s]
+# SLP: Finished : 1.7 [s]
+# SLP: 0 primitives and 7 (100.00%) other processes in SLP
+# SLP: 16 (55.17%) signals in SLP and 13 (44.83%) interface signals
+# ELAB2: Elaboration final pass complete - time: 1.7 [s].
+# KERNEL: SLP loading done - time: 0.1 [s].
+# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: SLP simulation initialization done - time: 0.0 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 5743 kB (elbread=1023 elab2=4629 kernel=89 sdf=0)
+# KERNEL: ASDB file was created in location c:\My_Designs\digi_cam\digi_cam\src\wave.asdb
+#  9:20 PM, Saturday, 16 November 2013
+#  Simulation has been initialized
+#  Selected Top-Level: RE_control_TB (RE_control_TB)
+# 13 signal(s) traced.
+run @25ms
+# KERNEL: 		clk, 		reset, 		init, 		exp_inc, 		exp_dec, 		NRE_1, 		NRE_2, 		ADC, 		Expose, 		Erase, 		ovf4, 		ovf5, 		EX_time
+# KERNEL:                    0, 	1, 	0, 	0, 	0, 	0, 	x, 	x, 	x, 	x, 	x, 	0, 	0, 	 5
+# KERNEL:                    1, 	0, 	0, 	0, 	0, 	0, 	x, 	x, 	x, 	x, 	x, 	0, 	0, 	 5
+# KERNEL:                    1, 	1, 	0, 	0, 	0, 	0, 	1, 	1, 	0, 	0, 	1, 	0, 	0, 	 5
+# KERNEL:                    2, 	0, 	0, 	0, 	0, 	0, 	1, 	1, 	0, 	0, 	1, 	0, 	0, 	 5
+# KERNEL:                    2, 	1, 	0, 	0, 	0, 	0, 	1, 	1, 	0, 	0, 	1, 	0, 	0, 	 5
+# KERNEL:                    3, 	0, 	0, 	0, 	0, 	0, 	1, 	1, 	0, 	0, 	1, 	0, 	0, 	 5
+# KERNEL:                    3, 	1, 	0, 	0, 	0, 	0, 	1, 	1, 	0, 	0, 	1, 	0, 	0, 	 5
+# KERNEL:                    4, 	0, 	0, 	0, 	0, 	0, 	1, 	1, 	0, 	0, 	1, 	0, 	0, 	 5
+# KERNEL:                    4, 	1, 	0, 	0, 	0, 	0, 	1, 	1, 	0, 	0, 	1, 	0, 	0, 	 5
+# KERNEL:                    5, 	0, 	0, 	0, 	0, 	0, 	1, 	1, 	0, 	0, 	1, 	0, 	0, 	 5
+# KERNEL:                    5, 	1, 	0, 	1, 	0, 	0, 	1, 	1, 	0, 	0, 	1, 	0, 	0, 	 5
+# KERNEL:                    6, 	0, 	0, 	1, 	0, 	0, 	1, 	1, 	0, 	0, 	1, 	0, 	0, 	 5
+# KERNEL:                    6, 	1, 	0, 	0, 	0, 	0, 	1, 	1, 	0, 	0, 	1, 	0, 	0, 	 5
+# KERNEL:                    7, 	0, 	0, 	0, 	0, 	0, 	1, 	1, 	0, 	0, 	1, 	0, 	0, 	 5
+# KERNEL:                    7, 	1, 	0, 	0, 	0, 	0, 	1, 	1, 	0, 	1, 	0, 	0, 	0, 	 5
+# KERNEL:                    8, 	0, 	0, 	0, 	0, 	0, 	1, 	1, 	0, 	1, 	0, 	0, 	0, 	 5
+# KERNEL:                    8, 	1, 	0, 	0, 	0, 	0, 	1, 	1, 	0, 	1, 	0, 	0, 	0, 	 5
+# KERNEL:                    9, 	0, 	0, 	0, 	0, 	0, 	1, 	1, 	0, 	1, 	0, 	0, 	0, 	 5
+# KERNEL:                    9, 	1, 	0, 	0, 	0, 	0, 	1, 	1, 	0, 	1, 	0, 	0, 	0, 	 5
+# KERNEL:                   10, 	0, 	0, 	0, 	0, 	0, 	1, 	1, 	0, 	1, 	0, 	0, 	0, 	 5
+# KERNEL:                   10, 	1, 	0, 	0, 	0, 	0, 	1, 	1, 	0, 	1, 	0, 	0, 	1, 	 5
+# KERNEL:                   11, 	0, 	0, 	0, 	0, 	0, 	1, 	1, 	0, 	1, 	0, 	0, 	1, 	 5
+# KERNEL:                   11, 	1, 	0, 	0, 	0, 	0, 	1, 	1, 	0, 	0, 	0, 	0, 	1, 	 5
+# KERNEL:                   12, 	0, 	0, 	0, 	0, 	0, 	1, 	1, 	0, 	0, 	0, 	0, 	1, 	 5
+# KERNEL:                   12, 	1, 	0, 	0, 	0, 	0, 	0, 	1, 	0, 	0, 	0, 	0, 	0, 	 5
+# KERNEL:                   13, 	0, 	0, 	0, 	0, 	0, 	0, 	1, 	0, 	0, 	0, 	0, 	0, 	 5
+# KERNEL:                   13, 	1, 	0, 	0, 	0, 	0, 	0, 	1, 	1, 	0, 	0, 	0, 	0, 	 5
+# KERNEL:                   14, 	0, 	0, 	0, 	0, 	0, 	0, 	1, 	1, 	0, 	0, 	0, 	0, 	 5
+# KERNEL:                   14, 	1, 	0, 	0, 	0, 	0, 	0, 	1, 	0, 	0, 	0, 	0, 	0, 	 5
+# KERNEL:                   15, 	0, 	0, 	0, 	0, 	0, 	0, 	1, 	0, 	0, 	0, 	0, 	0, 	 5
+# KERNEL:                   15, 	1, 	0, 	0, 	0, 	0, 	1, 	1, 	0, 	0, 	0, 	0, 	1, 	 5
+# KERNEL:                   16, 	0, 	0, 	0, 	0, 	0, 	1, 	1, 	0, 	0, 	0, 	0, 	1, 	 5
+# KERNEL:                   16, 	1, 	0, 	0, 	0, 	0, 	1, 	0, 	0, 	0, 	0, 	0, 	1, 	 5
+# KERNEL:                   17, 	0, 	0, 	0, 	0, 	0, 	1, 	0, 	0, 	0, 	0, 	0, 	1, 	 5
+# KERNEL:                   17, 	1, 	0, 	0, 	0, 	0, 	1, 	0, 	1, 	0, 	0, 	0, 	1, 	 5
+# KERNEL:                   18, 	0, 	0, 	0, 	0, 	0, 	1, 	0, 	1, 	0, 	0, 	0, 	1, 	 5
+# KERNEL:                   18, 	1, 	0, 	0, 	0, 	0, 	1, 	0, 	0, 	0, 	0, 	0, 	1, 	 5
+# KERNEL:                   19, 	0, 	0, 	0, 	0, 	0, 	1, 	0, 	0, 	0, 	0, 	0, 	1, 	 5
+# KERNEL:                   19, 	1, 	0, 	0, 	0, 	0, 	1, 	1, 	0, 	0, 	0, 	1, 	1, 	 5
+# KERNEL:                   20, 	0, 	0, 	0, 	0, 	0, 	1, 	1, 	0, 	0, 	0, 	1, 	1, 	 5
+# KERNEL:                   20, 	1, 	0, 	0, 	0, 	0, 	1, 	1, 	0, 	0, 	1, 	1, 	1, 	 5
+# KERNEL:                   21, 	0, 	0, 	0, 	0, 	0, 	1, 	1, 	0, 	0, 	1, 	1, 	1, 	 5
+# KERNEL:                   21, 	1, 	0, 	0, 	0, 	0, 	1, 	1, 	0, 	0, 	1, 	0, 	0, 	 5
+# KERNEL:                   22, 	0, 	0, 	0, 	0, 	0, 	1, 	1, 	0, 	0, 	1, 	0, 	0, 	 5
+# KERNEL:                   22, 	1, 	0, 	0, 	0, 	0, 	1, 	1, 	0, 	0, 	1, 	0, 	0, 	 5
+# KERNEL:                   23, 	0, 	0, 	0, 	0, 	0, 	1, 	1, 	0, 	0, 	1, 	0, 	0, 	 5
+# KERNEL:                   23, 	1, 	0, 	0, 	0, 	0, 	1, 	1, 	0, 	0, 	1, 	0, 	0, 	 5
+# KERNEL:                   24, 	0, 	0, 	0, 	0, 	0, 	1, 	1, 	0, 	0, 	1, 	0, 	0, 	 5
+# KERNEL:                   24, 	1, 	0, 	0, 	0, 	0, 	1, 	1, 	0, 	0, 	1, 	0, 	0, 	 5
+# KERNEL:                   25, 	0, 	0, 	0, 	0, 	0, 	1, 	1, 	0, 	0, 	1, 	0, 	0, 	 5
+# KERNEL:                   25, 	1, 	0, 	0, 	0, 	0, 	1, 	1, 	0, 	0, 	1, 	0, 	0, 	 5
+# KERNEL: stopped at time: 25 ms
+endsim
+#  Simulation has been stopped
+alog -O2 -sve  -work digi_cam $dsn/src/RE_control.v $dsn/src/RE_control_TB.v
+# Warning: The source is compiled without the -dbg switch. Line breakpoints and code coverage will not be available.
+# Compile...
+# Pass 1. Scanning modules hierarchy.
+# Info: VCP2113 Module \$root found in current working library.
+# Pass 2. Processing instantiations.
+# Pass 3. Processing behavioral statements.
+# Parameters in case labels, will not check for overlapping labels (c:/My_Designs/digi_cam/digi_cam/src/RE_control.v, ln 69).
+# Parameters in case labels, will not check for overlapping labels (c:/My_Designs/digi_cam/digi_cam/src/RE_control.v, ln 176).
+# Running Optimizer.
+# ELB/DAG code generating.
+# Info: VCP2113 Module \$root found in current working library.
+# Unit top modules: RE_control_TB.
+# $root top modules: RE_control_TB.
+# Compile success 0 Errors 0 Warnings  Analysis time: 1[s].
+# done
+asim -O5 +access +w_nets +m+RE_control, +m+RE_control_TB +access +r +m+RE_control_TB RE_control_TB
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# asim: Stack memory: 32MB
+# asim: Retval memory: 32MB
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... done : 0.2 [s]
+# SLP: Generation phase ...
+# SLP: Generation phase ... done : 1.9 [s]
+# SLP: Finished : 2.2 [s]
+# SLP: 0 primitives and 7 (100.00%) other processes in SLP
+# SLP: 16 (55.17%) signals in SLP and 13 (44.83%) interface signals
+# ELAB2: Elaboration final pass complete - time: 2.2 [s].
+# KERNEL: SLP loading done - time: 0.1 [s].
+# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: SLP simulation initialization done - time: 0.0 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 5745 kB (elbread=1023 elab2=4631 kernel=89 sdf=0)
+# KERNEL: ASDB file was created in location c:\My_Designs\digi_cam\digi_cam\src\wave.asdb
+#  9:24 PM, Saturday, 16 November 2013
+#  Simulation has been initialized
+#  Selected Top-Level: RE_control_TB (RE_control_TB)
+# 13 signal(s) traced.
+run
+# KERNEL: 		clk, 		reset, 		init, 		exp_inc, 		exp_dec, 		NRE_1, 		NRE_2, 		ADC, 		Expose, 		Erase, 		ovf4, 		ovf5, 		EX_time
+# KERNEL:                    0, 	1, 	0, 	0, 	0, 	0, 	x, 	x, 	x, 	x, 	x, 	0, 	0, 	 5
+# KERNEL:                    1, 	0, 	0, 	0, 	0, 	0, 	x, 	x, 	x, 	x, 	x, 	0, 	0, 	 5
+# KERNEL:                    1, 	1, 	0, 	0, 	0, 	0, 	1, 	1, 	0, 	0, 	1, 	0, 	0, 	 5
+# KERNEL:                    2, 	0, 	0, 	0, 	0, 	0, 	1, 	1, 	0, 	0, 	1, 	0, 	0, 	 5
+# KERNEL:                    2, 	1, 	0, 	0, 	0, 	0, 	1, 	1, 	0, 	0, 	1, 	0, 	0, 	 5
+# KERNEL:                    3, 	0, 	0, 	0, 	0, 	0, 	1, 	1, 	0, 	0, 	1, 	0, 	0, 	 5
+# KERNEL:                    3, 	1, 	0, 	0, 	0, 	0, 	1, 	1, 	0, 	0, 	1, 	0, 	0, 	 5
+# KERNEL:                    4, 	0, 	0, 	0, 	0, 	0, 	1, 	1, 	0, 	0, 	1, 	0, 	0, 	 5
+# KERNEL:                    4, 	1, 	0, 	0, 	0, 	0, 	1, 	1, 	0, 	0, 	1, 	0, 	0, 	 5
+# KERNEL:                    5, 	0, 	0, 	0, 	0, 	0, 	1, 	1, 	0, 	0, 	1, 	0, 	0, 	 5
+# KERNEL:                    5, 	1, 	0, 	1, 	0, 	0, 	1, 	1, 	0, 	0, 	1, 	0, 	0, 	 5
+# KERNEL:                    6, 	0, 	0, 	1, 	0, 	0, 	1, 	1, 	0, 	0, 	1, 	0, 	0, 	 5
+# KERNEL:                    6, 	1, 	0, 	0, 	0, 	0, 	1, 	1, 	0, 	0, 	1, 	0, 	0, 	 5
+# KERNEL:                    7, 	0, 	0, 	0, 	0, 	0, 	1, 	1, 	0, 	0, 	1, 	0, 	0, 	 5
+# KERNEL:                    7, 	1, 	0, 	0, 	0, 	0, 	1, 	1, 	0, 	1, 	0, 	0, 	0, 	 5
+# KERNEL:                    8, 	0, 	0, 	0, 	0, 	0, 	1, 	1, 	0, 	1, 	0, 	0, 	0, 	 5
+# KERNEL:                    8, 	1, 	0, 	0, 	0, 	0, 	1, 	1, 	0, 	1, 	0, 	0, 	0, 	 5
+# KERNEL:                    9, 	0, 	0, 	0, 	0, 	0, 	1, 	1, 	0, 	1, 	0, 	0, 	0, 	 5
+# KERNEL:                    9, 	1, 	0, 	0, 	0, 	0, 	1, 	1, 	0, 	1, 	0, 	0, 	0, 	 5
+# KERNEL:                   10, 	0, 	0, 	0, 	0, 	0, 	1, 	1, 	0, 	1, 	0, 	0, 	0, 	 5
+# KERNEL:                   10, 	1, 	0, 	0, 	0, 	0, 	1, 	1, 	0, 	1, 	0, 	0, 	1, 	 5
+# KERNEL:                   11, 	0, 	0, 	0, 	0, 	0, 	1, 	1, 	0, 	1, 	0, 	0, 	1, 	 5
+# KERNEL:                   11, 	1, 	0, 	0, 	0, 	0, 	1, 	1, 	0, 	0, 	0, 	0, 	1, 	 5
+# KERNEL:                   12, 	0, 	0, 	0, 	0, 	0, 	1, 	1, 	0, 	0, 	0, 	0, 	1, 	 5
+# KERNEL:                   12, 	1, 	0, 	0, 	0, 	0, 	0, 	1, 	0, 	0, 	0, 	0, 	0, 	 5
+# KERNEL:                   13, 	0, 	0, 	0, 	0, 	0, 	0, 	1, 	0, 	0, 	0, 	0, 	0, 	 5
+# KERNEL:                   13, 	1, 	0, 	0, 	0, 	0, 	0, 	1, 	1, 	0, 	0, 	0, 	0, 	 5
+# KERNEL:                   14, 	0, 	0, 	0, 	0, 	0, 	0, 	1, 	1, 	0, 	0, 	0, 	0, 	 5
+# KERNEL:                   14, 	1, 	0, 	0, 	0, 	0, 	0, 	1, 	0, 	0, 	0, 	0, 	0, 	 5
+# KERNEL:                   15, 	0, 	0, 	0, 	0, 	0, 	0, 	1, 	0, 	0, 	0, 	0, 	0, 	 5
+# KERNEL:                   15, 	1, 	0, 	0, 	0, 	0, 	1, 	1, 	0, 	0, 	0, 	0, 	1, 	 5
+# KERNEL:                   16, 	0, 	0, 	0, 	0, 	0, 	1, 	1, 	0, 	0, 	0, 	0, 	1, 	 5
+# KERNEL:                   16, 	1, 	0, 	0, 	0, 	0, 	1, 	0, 	0, 	0, 	0, 	0, 	1, 	 5
+# KERNEL:                   17, 	0, 	0, 	0, 	0, 	0, 	1, 	0, 	0, 	0, 	0, 	0, 	1, 	 5
+# KERNEL:                   17, 	1, 	0, 	0, 	0, 	0, 	1, 	0, 	1, 	0, 	0, 	0, 	1, 	 5
+# KERNEL:                   18, 	0, 	0, 	0, 	0, 	0, 	1, 	0, 	1, 	0, 	0, 	0, 	1, 	 5
+# KERNEL:                   18, 	1, 	0, 	0, 	0, 	0, 	1, 	0, 	0, 	0, 	0, 	0, 	1, 	 5
+# KERNEL:                   19, 	0, 	0, 	0, 	0, 	0, 	1, 	0, 	0, 	0, 	0, 	0, 	1, 	 5
+# KERNEL:                   19, 	1, 	0, 	0, 	0, 	0, 	1, 	1, 	0, 	0, 	0, 	1, 	1, 	 5
+# KERNEL:                   20, 	0, 	0, 	0, 	0, 	0, 	1, 	1, 	0, 	0, 	0, 	1, 	1, 	 5
+# KERNEL:                   20, 	1, 	0, 	0, 	0, 	0, 	1, 	1, 	0, 	0, 	1, 	1, 	1, 	 5
+# KERNEL:                   21, 	0, 	0, 	0, 	0, 	0, 	1, 	1, 	0, 	0, 	1, 	1, 	1, 	 5
+# KERNEL:                   21, 	1, 	0, 	0, 	0, 	0, 	1, 	1, 	0, 	0, 	1, 	0, 	0, 	 5
+# KERNEL:                   22, 	0, 	0, 	0, 	0, 	0, 	1, 	1, 	0, 	0, 	1, 	0, 	0, 	 5
+# KERNEL:                   22, 	1, 	0, 	0, 	0, 	0, 	1, 	1, 	0, 	0, 	1, 	0, 	0, 	 5
+# KERNEL:                   23, 	0, 	0, 	0, 	0, 	0, 	1, 	1, 	0, 	0, 	1, 	0, 	0, 	 5
+# KERNEL:                   23, 	1, 	0, 	0, 	0, 	0, 	1, 	1, 	0, 	0, 	1, 	0, 	0, 	 5
+# KERNEL:                   24, 	0, 	0, 	0, 	0, 	0, 	1, 	1, 	0, 	0, 	1, 	0, 	0, 	 5
+# KERNEL:                   24, 	1, 	0, 	0, 	0, 	0, 	1, 	1, 	0, 	0, 	1, 	0, 	0, 	 5
+# KERNEL:                   25, 	0, 	0, 	0, 	0, 	0, 	1, 	1, 	0, 	0, 	1, 	0, 	0, 	 5
+# KERNEL:                   25, 	1, 	0, 	0, 	0, 	0, 	1, 	1, 	0, 	0, 	1, 	0, 	0, 	 5
+# KERNEL:                   26, 	0, 	0, 	0, 	0, 	0, 	1, 	1, 	0, 	0, 	1, 	0, 	0, 	 5
+# KERNEL:                   26, 	1, 	0, 	0, 	0, 	0, 	1, 	1, 	0, 	0, 	1, 	0, 	0, 	 5
+# KERNEL:                   27, 	0, 	0, 	0, 	0, 	0, 	1, 	1, 	0, 	0, 	1, 	0, 	0, 	 5
+# KERNEL:                   27, 	1, 	0, 	0, 	0, 	0, 	1, 	1, 	0, 	0, 	1, 	0, 	0, 	 5
+# KERNEL:                   28, 	0, 	0, 	0, 	0, 	0, 	1, 	1, 	0, 	0, 	1, 	0, 	0, 	 5
+# KERNEL:                   28, 	1, 	0, 	0, 	0, 	0, 	1, 	1, 	0, 	0, 	1, 	0, 	0, 	 5
+# KERNEL:                   29, 	0, 	0, 	0, 	0, 	0, 	1, 	1, 	0, 	0, 	1, 	0, 	0, 	 5
+# KERNEL:                   29, 	1, 	0, 	0, 	0, 	0, 	1, 	1, 	0, 	0, 	1, 	0, 	0, 	 5
+# KERNEL:                   30, 	0, 	0, 	0, 	0, 	0, 	1, 	1, 	0, 	0, 	1, 	0, 	0, 	 5
+# KERNEL:                   30, 	1, 	0, 	0, 	0, 	0, 	1, 	1, 	0, 	0, 	1, 	0, 	0, 	 5
+# KERNEL:                   31, 	0, 	0, 	0, 	0, 	0, 	1, 	1, 	0, 	0, 	1, 	0, 	0, 	 5
+# KERNEL:                   31, 	1, 	0, 	0, 	1, 	0, 	1, 	1, 	0, 	0, 	1, 	0, 	0, 	 5
+# KERNEL:                   32, 	0, 	0, 	0, 	1, 	0, 	1, 	1, 	0, 	0, 	1, 	0, 	0, 	 5
+# KERNEL:                   32, 	1, 	0, 	0, 	1, 	0, 	1, 	1, 	0, 	0, 	1, 	0, 	0, 	 6
+# KERNEL:                   33, 	0, 	0, 	0, 	1, 	0, 	1, 	1, 	0, 	0, 	1, 	0, 	0, 	 6
+# KERNEL:                   33, 	1, 	0, 	0, 	1, 	0, 	1, 	1, 	0, 	0, 	1, 	0, 	0, 	 7
+# KERNEL:                   34, 	0, 	0, 	0, 	1, 	0, 	1, 	1, 	0, 	0, 	1, 	0, 	0, 	 7
+# KERNEL:                   34, 	1, 	0, 	0, 	1, 	0, 	1, 	1, 	0, 	0, 	1, 	0, 	0, 	 8
+# KERNEL:                   35, 	0, 	0, 	0, 	1, 	0, 	1, 	1, 	0, 	0, 	1, 	0, 	0, 	 8
+# KERNEL:                   35, 	1, 	0, 	0, 	1, 	0, 	1, 	1, 	0, 	0, 	1, 	0, 	0, 	 9
+# KERNEL:                   36, 	0, 	0, 	0, 	1, 	0, 	1, 	1, 	0, 	0, 	1, 	0, 	0, 	 9
+# KERNEL:                   36, 	1, 	0, 	0, 	1, 	0, 	1, 	1, 	0, 	0, 	1, 	0, 	0, 	10
+# KERNEL:                   37, 	0, 	0, 	0, 	1, 	0, 	1, 	1, 	0, 	0, 	1, 	0, 	0, 	10
+# KERNEL:                   37, 	1, 	0, 	0, 	1, 	0, 	1, 	1, 	0, 	0, 	1, 	0, 	0, 	11
+# KERNEL:                   38, 	0, 	0, 	0, 	1, 	0, 	1, 	1, 	0, 	0, 	1, 	0, 	0, 	11
+# KERNEL:                   38, 	1, 	0, 	0, 	1, 	0, 	1, 	1, 	0, 	0, 	1, 	0, 	0, 	12
+# KERNEL:                   39, 	0, 	0, 	0, 	1, 	0, 	1, 	1, 	0, 	0, 	1, 	0, 	0, 	12
+# KERNEL:                   39, 	1, 	0, 	0, 	1, 	0, 	1, 	1, 	0, 	0, 	1, 	0, 	0, 	13
+# KERNEL:                   40, 	0, 	0, 	0, 	1, 	0, 	1, 	1, 	0, 	0, 	1, 	0, 	0, 	13
+# KERNEL:                   40, 	1, 	0, 	0, 	1, 	0, 	1, 	1, 	0, 	0, 	1, 	0, 	0, 	14
+# KERNEL:                   41, 	0, 	0, 	0, 	1, 	0, 	1, 	1, 	0, 	0, 	1, 	0, 	0, 	14
+# KERNEL:                   41, 	1, 	0, 	0, 	1, 	0, 	1, 	1, 	0, 	0, 	1, 	0, 	0, 	15
+# KERNEL:                   42, 	0, 	0, 	0, 	1, 	0, 	1, 	1, 	0, 	0, 	1, 	0, 	0, 	15
+# KERNEL:                   42, 	1, 	0, 	0, 	1, 	0, 	1, 	1, 	0, 	0, 	1, 	0, 	0, 	16
+# KERNEL:                   43, 	0, 	0, 	0, 	1, 	0, 	1, 	1, 	0, 	0, 	1, 	0, 	0, 	16
+# KERNEL:                   43, 	1, 	0, 	0, 	1, 	0, 	1, 	1, 	0, 	0, 	1, 	0, 	0, 	17
+# KERNEL:                   44, 	0, 	0, 	0, 	1, 	0, 	1, 	1, 	0, 	0, 	1, 	0, 	0, 	17
+# KERNEL:                   44, 	1, 	0, 	0, 	1, 	0, 	1, 	1, 	0, 	0, 	1, 	0, 	0, 	18
+# KERNEL:                   45, 	0, 	0, 	0, 	1, 	0, 	1, 	1, 	0, 	0, 	1, 	0, 	0, 	18
+# KERNEL:                   45, 	1, 	0, 	0, 	1, 	0, 	1, 	1, 	0, 	0, 	1, 	0, 	0, 	19
+# KERNEL:                   46, 	0, 	0, 	0, 	1, 	0, 	1, 	1, 	0, 	0, 	1, 	0, 	0, 	19
+# KERNEL:                   46, 	1, 	0, 	0, 	1, 	0, 	1, 	1, 	0, 	0, 	1, 	0, 	0, 	20
+# KERNEL:                   47, 	0, 	0, 	0, 	1, 	0, 	1, 	1, 	0, 	0, 	1, 	0, 	0, 	20
+# KERNEL:                   47, 	1, 	0, 	0, 	1, 	0, 	1, 	1, 	0, 	0, 	1, 	0, 	0, 	21
+# KERNEL:                   48, 	0, 	0, 	0, 	1, 	0, 	1, 	1, 	0, 	0, 	1, 	0, 	0, 	21
+# KERNEL:                   48, 	1, 	0, 	0, 	1, 	0, 	1, 	1, 	0, 	0, 	1, 	0, 	0, 	22
+# KERNEL:                   49, 	0, 	0, 	0, 	1, 	0, 	1, 	1, 	0, 	0, 	1, 	0, 	0, 	22
+# KERNEL:                   49, 	1, 	0, 	0, 	1, 	0, 	1, 	1, 	0, 	0, 	1, 	0, 	0, 	23
+# KERNEL:                   50, 	0, 	0, 	0, 	1, 	0, 	1, 	1, 	0, 	0, 	1, 	0, 	0, 	23
+# KERNEL:                   50, 	1, 	0, 	0, 	1, 	0, 	1, 	1, 	0, 	0, 	1, 	0, 	0, 	24
+# KERNEL:                   51, 	0, 	0, 	0, 	1, 	0, 	1, 	1, 	0, 	0, 	1, 	0, 	0, 	24
+# KERNEL:                   51, 	1, 	0, 	0, 	1, 	0, 	1, 	1, 	0, 	0, 	1, 	0, 	0, 	25
+# KERNEL:                   52, 	0, 	0, 	0, 	1, 	0, 	1, 	1, 	0, 	0, 	1, 	0, 	0, 	25
+# KERNEL:                   52, 	1, 	0, 	0, 	1, 	0, 	1, 	1, 	0, 	0, 	1, 	0, 	0, 	26
+# KERNEL:                   53, 	0, 	0, 	0, 	1, 	0, 	1, 	1, 	0, 	0, 	1, 	0, 	0, 	26
+# KERNEL:                   53, 	1, 	0, 	0, 	1, 	0, 	1, 	1, 	0, 	0, 	1, 	0, 	0, 	27
+# KERNEL:                   54, 	0, 	0, 	0, 	1, 	0, 	1, 	1, 	0, 	0, 	1, 	0, 	0, 	27
+# KERNEL:                   54, 	1, 	0, 	0, 	1, 	0, 	1, 	1, 	0, 	0, 	1, 	0, 	0, 	28
+# KERNEL:                   55, 	0, 	0, 	0, 	1, 	0, 	1, 	1, 	0, 	0, 	1, 	0, 	0, 	28
+# KERNEL:                   55, 	1, 	0, 	0, 	1, 	0, 	1, 	1, 	0, 	0, 	1, 	0, 	0, 	29
+# KERNEL:                   56, 	0, 	0, 	0, 	1, 	0, 	1, 	1, 	0, 	0, 	1, 	0, 	0, 	29
+# KERNEL:                   56, 	1, 	0, 	0, 	1, 	0, 	1, 	1, 	0, 	0, 	1, 	0, 	0, 	30
+# KERNEL:                   57, 	0, 	0, 	0, 	1, 	0, 	1, 	1, 	0, 	0, 	1, 	0, 	0, 	30
+# KERNEL:                   57, 	1, 	0, 	0, 	1, 	0, 	1, 	1, 	0, 	0, 	1, 	0, 	0, 	30
+# KERNEL:                   58, 	0, 	0, 	0, 	1, 	0, 	1, 	1, 	0, 	0, 	1, 	0, 	0, 	30
+# KERNEL:                   58, 	1, 	0, 	0, 	1, 	0, 	1, 	1, 	0, 	0, 	1, 	0, 	0, 	30
+# KERNEL:                   59, 	0, 	0, 	0, 	1, 	0, 	1, 	1, 	0, 	0, 	1, 	0, 	0, 	30
+# KERNEL:                   59, 	1, 	0, 	0, 	1, 	0, 	1, 	1, 	0, 	0, 	1, 	0, 	0, 	30
+# KERNEL:                   60, 	0, 	0, 	0, 	1, 	0, 	1, 	1, 	0, 	0, 	1, 	0, 	0, 	30
+# KERNEL:                   60, 	1, 	0, 	0, 	1, 	0, 	1, 	1, 	0, 	0, 	1, 	0, 	0, 	30
+# KERNEL:                   61, 	0, 	0, 	0, 	1, 	0, 	1, 	1, 	0, 	0, 	1, 	0, 	0, 	30
+# KERNEL:                   61, 	1, 	0, 	1, 	1, 	0, 	1, 	1, 	0, 	0, 	1, 	0, 	0, 	30
+# KERNEL:                   62, 	0, 	0, 	1, 	1, 	0, 	1, 	1, 	0, 	0, 	1, 	0, 	0, 	30
+# KERNEL:                   62, 	1, 	0, 	0, 	1, 	0, 	1, 	1, 	0, 	0, 	1, 	0, 	0, 	30
+# KERNEL:                   63, 	0, 	0, 	0, 	1, 	0, 	1, 	1, 	0, 	0, 	1, 	0, 	0, 	30
+# KERNEL:                   63, 	1, 	0, 	0, 	1, 	0, 	1, 	1, 	0, 	1, 	0, 	0, 	0, 	30
+# KERNEL:                   64, 	0, 	0, 	0, 	1, 	0, 	1, 	1, 	0, 	1, 	0, 	0, 	0, 	30
+# KERNEL:                   64, 	1, 	0, 	0, 	1, 	0, 	1, 	1, 	0, 	1, 	0, 	0, 	0, 	30
+# KERNEL:                   65, 	0, 	0, 	0, 	1, 	0, 	1, 	1, 	0, 	1, 	0, 	0, 	0, 	30
+# KERNEL:                   65, 	1, 	0, 	0, 	1, 	0, 	1, 	1, 	0, 	1, 	0, 	0, 	0, 	30
+# KERNEL:                   66, 	0, 	0, 	0, 	1, 	0, 	1, 	1, 	0, 	1, 	0, 	0, 	0, 	30
+# KERNEL:                   66, 	1, 	0, 	0, 	1, 	0, 	1, 	1, 	0, 	1, 	0, 	0, 	0, 	30
+# KERNEL:                   67, 	0, 	0, 	0, 	1, 	0, 	1, 	1, 	0, 	1, 	0, 	0, 	0, 	30
+# KERNEL:                   67, 	1, 	0, 	0, 	1, 	0, 	1, 	1, 	0, 	1, 	0, 	0, 	0, 	30
+# KERNEL:                   68, 	0, 	0, 	0, 	1, 	0, 	1, 	1, 	0, 	1, 	0, 	0, 	0, 	30
+# KERNEL:                   68, 	1, 	0, 	0, 	1, 	0, 	1, 	1, 	0, 	1, 	0, 	0, 	0, 	30
+# KERNEL:                   69, 	0, 	0, 	0, 	1, 	0, 	1, 	1, 	0, 	1, 	0, 	0, 	0, 	30
+# KERNEL:                   69, 	1, 	0, 	0, 	1, 	0, 	1, 	1, 	0, 	1, 	0, 	0, 	0, 	30
+# KERNEL:                   70, 	0, 	0, 	0, 	1, 	0, 	1, 	1, 	0, 	1, 	0, 	0, 	0, 	30
+# KERNEL:                   70, 	1, 	0, 	0, 	1, 	0, 	1, 	1, 	0, 	1, 	0, 	1, 	0, 	30
+# KERNEL:                   71, 	0, 	0, 	0, 	1, 	0, 	1, 	1, 	0, 	1, 	0, 	1, 	0, 	30
+# KERNEL:                   71, 	1, 	0, 	0, 	1, 	0, 	1, 	1, 	0, 	1, 	0, 	1, 	0, 	30
+# KERNEL:                   72, 	0, 	0, 	0, 	1, 	0, 	1, 	1, 	0, 	1, 	0, 	1, 	0, 	30
+# KERNEL:                   72, 	1, 	0, 	0, 	1, 	0, 	1, 	1, 	0, 	1, 	0, 	1, 	0, 	30
+# KERNEL:                   73, 	0, 	0, 	0, 	1, 	0, 	1, 	1, 	0, 	1, 	0, 	1, 	0, 	30
+# KERNEL:                   73, 	1, 	0, 	0, 	1, 	0, 	1, 	1, 	0, 	1, 	0, 	1, 	0, 	30
+# KERNEL:                   74, 	0, 	0, 	0, 	1, 	0, 	1, 	1, 	0, 	1, 	0, 	1, 	0, 	30
+# KERNEL:                   74, 	1, 	0, 	0, 	1, 	0, 	1, 	1, 	0, 	1, 	0, 	1, 	0, 	30
+# KERNEL:                   75, 	0, 	0, 	0, 	1, 	0, 	1, 	1, 	0, 	1, 	0, 	1, 	0, 	30
+# KERNEL:                   75, 	1, 	0, 	0, 	1, 	0, 	1, 	1, 	0, 	1, 	0, 	1, 	0, 	30
+# KERNEL:                   76, 	0, 	0, 	0, 	1, 	0, 	1, 	1, 	0, 	1, 	0, 	1, 	0, 	30
+# KERNEL:                   76, 	1, 	0, 	0, 	1, 	0, 	1, 	1, 	0, 	1, 	0, 	1, 	0, 	30
+# KERNEL:                   77, 	0, 	0, 	0, 	1, 	0, 	1, 	1, 	0, 	1, 	0, 	1, 	0, 	30
+# KERNEL:                   77, 	1, 	0, 	0, 	1, 	0, 	1, 	1, 	0, 	1, 	0, 	1, 	0, 	30
+# KERNEL:                   78, 	0, 	0, 	0, 	1, 	0, 	1, 	1, 	0, 	1, 	0, 	1, 	0, 	30
+# KERNEL:                   78, 	1, 	0, 	0, 	1, 	0, 	1, 	1, 	0, 	1, 	0, 	1, 	0, 	30
+# KERNEL:                   79, 	0, 	0, 	0, 	1, 	0, 	1, 	1, 	0, 	1, 	0, 	1, 	0, 	30
+# KERNEL:                   79, 	1, 	0, 	0, 	1, 	0, 	1, 	1, 	0, 	1, 	0, 	1, 	0, 	30
+# KERNEL:                   80, 	0, 	0, 	0, 	1, 	0, 	1, 	1, 	0, 	1, 	0, 	1, 	0, 	30
+# KERNEL:                   80, 	1, 	0, 	0, 	1, 	0, 	1, 	1, 	0, 	1, 	0, 	1, 	0, 	30
+# KERNEL:                   81, 	0, 	0, 	0, 	1, 	0, 	1, 	1, 	0, 	1, 	0, 	1, 	0, 	30
+# KERNEL:                   81, 	1, 	0, 	0, 	1, 	0, 	1, 	1, 	0, 	1, 	0, 	1, 	0, 	30
+# KERNEL:                   82, 	0, 	0, 	0, 	1, 	0, 	1, 	1, 	0, 	1, 	0, 	1, 	0, 	30
+# KERNEL:                   82, 	1, 	0, 	0, 	1, 	0, 	1, 	1, 	0, 	1, 	0, 	1, 	0, 	30
+# KERNEL:                   83, 	0, 	0, 	0, 	1, 	0, 	1, 	1, 	0, 	1, 	0, 	1, 	0, 	30
+# KERNEL:                   83, 	1, 	0, 	0, 	1, 	0, 	1, 	1, 	0, 	1, 	0, 	1, 	0, 	30
+# KERNEL:                   84, 	0, 	0, 	0, 	1, 	0, 	1, 	1, 	0, 	1, 	0, 	1, 	0, 	30
+# KERNEL:                   84, 	1, 	0, 	0, 	1, 	0, 	1, 	1, 	0, 	1, 	0, 	1, 	0, 	30
+# KERNEL:                   85, 	0, 	0, 	0, 	1, 	0, 	1, 	1, 	0, 	1, 	0, 	1, 	0, 	30
+# KERNEL:                   85, 	1, 	0, 	0, 	1, 	0, 	1, 	1, 	0, 	1, 	0, 	1, 	0, 	30
+# KERNEL:                   86, 	0, 	0, 	0, 	1, 	0, 	1, 	1, 	0, 	1, 	0, 	1, 	0, 	30
+# KERNEL:                   86, 	1, 	0, 	0, 	1, 	0, 	1, 	1, 	0, 	1, 	0, 	1, 	0, 	30
+# KERNEL:                   87, 	0, 	0, 	0, 	1, 	0, 	1, 	1, 	0, 	1, 	0, 	1, 	0, 	30
+# KERNEL:                   87, 	1, 	0, 	0, 	0, 	1, 	1, 	1, 	0, 	1, 	0, 	1, 	0, 	30
+# KERNEL:                   88, 	0, 	0, 	0, 	0, 	1, 	1, 	1, 	0, 	1, 	0, 	1, 	0, 	30
+# KERNEL:                   88, 	1, 	0, 	0, 	0, 	1, 	1, 	1, 	0, 	1, 	0, 	1, 	0, 	30
+# KERNEL:                   89, 	0, 	0, 	0, 	0, 	1, 	1, 	1, 	0, 	1, 	0, 	1, 	0, 	30
+# KERNEL:                   89, 	1, 	0, 	0, 	0, 	1, 	1, 	1, 	0, 	1, 	0, 	1, 	0, 	30
+# KERNEL:                   90, 	0, 	0, 	0, 	0, 	1, 	1, 	1, 	0, 	1, 	0, 	1, 	0, 	30
+# KERNEL:                   90, 	1, 	0, 	0, 	0, 	1, 	1, 	1, 	0, 	1, 	0, 	1, 	0, 	30
+# KERNEL:                   91, 	0, 	0, 	0, 	0, 	1, 	1, 	1, 	0, 	1, 	0, 	1, 	0, 	30
+# KERNEL:                   91, 	1, 	0, 	0, 	0, 	1, 	1, 	1, 	0, 	1, 	0, 	1, 	1, 	30
+# KERNEL:                   92, 	0, 	0, 	0, 	0, 	1, 	1, 	1, 	0, 	1, 	0, 	1, 	1, 	30
+# KERNEL:                   92, 	1, 	0, 	0, 	0, 	1, 	1, 	1, 	0, 	0, 	0, 	1, 	1, 	30
+# KERNEL:                   93, 	0, 	0, 	0, 	0, 	1, 	1, 	1, 	0, 	0, 	0, 	1, 	1, 	30
+# KERNEL:                   93, 	1, 	0, 	0, 	0, 	1, 	1, 	1, 	0, 	0, 	1, 	0, 	0, 	30
+# KERNEL:                   94, 	0, 	0, 	0, 	0, 	1, 	1, 	1, 	0, 	0, 	1, 	0, 	0, 	30
+# KERNEL:                   94, 	1, 	0, 	0, 	0, 	1, 	0, 	1, 	0, 	0, 	1, 	0, 	0, 	30
+# KERNEL:                   95, 	0, 	0, 	0, 	0, 	1, 	0, 	1, 	0, 	0, 	1, 	0, 	0, 	30
+# KERNEL:                   95, 	1, 	0, 	0, 	0, 	1, 	0, 	1, 	1, 	0, 	1, 	0, 	0, 	30
+# KERNEL:                   96, 	0, 	0, 	0, 	0, 	1, 	0, 	1, 	1, 	0, 	1, 	0, 	0, 	30
+# KERNEL:                   96, 	1, 	0, 	0, 	0, 	1, 	0, 	1, 	0, 	0, 	1, 	0, 	0, 	30
+# KERNEL:                   97, 	0, 	0, 	0, 	0, 	1, 	0, 	1, 	0, 	0, 	1, 	0, 	0, 	30
+# KERNEL:                   97, 	1, 	0, 	0, 	0, 	1, 	1, 	1, 	0, 	0, 	1, 	0, 	0, 	30
+# KERNEL:                   98, 	0, 	0, 	0, 	0, 	1, 	1, 	1, 	0, 	0, 	1, 	0, 	0, 	30
+# KERNEL:                   98, 	1, 	0, 	0, 	0, 	1, 	1, 	0, 	0, 	0, 	1, 	0, 	0, 	30
+# KERNEL:                   99, 	0, 	0, 	0, 	0, 	1, 	1, 	0, 	0, 	0, 	1, 	0, 	0, 	30
+# KERNEL:                   99, 	1, 	0, 	0, 	0, 	1, 	1, 	0, 	1, 	0, 	1, 	0, 	0, 	30
+# KERNEL:                  100, 	0, 	0, 	0, 	0, 	1, 	1, 	0, 	1, 	0, 	1, 	0, 	0, 	30
+# KERNEL:                  100, 	1, 	0, 	0, 	0, 	1, 	1, 	0, 	0, 	0, 	1, 	0, 	0, 	30
+# KERNEL:                  101, 	0, 	0, 	0, 	0, 	1, 	1, 	0, 	0, 	0, 	1, 	0, 	0, 	30
+# KERNEL:                  101, 	1, 	0, 	0, 	0, 	1, 	1, 	1, 	0, 	0, 	1, 	1, 	0, 	30
+# KERNEL:                  102, 	0, 	0, 	0, 	0, 	1, 	1, 	1, 	0, 	0, 	1, 	1, 	0, 	30
+# KERNEL:                  102, 	1, 	0, 	1, 	0, 	1, 	1, 	1, 	0, 	0, 	1, 	1, 	0, 	30
+# KERNEL:                  103, 	0, 	0, 	1, 	0, 	1, 	1, 	1, 	0, 	0, 	1, 	1, 	0, 	30
+# KERNEL:                  103, 	1, 	0, 	0, 	0, 	1, 	1, 	1, 	0, 	0, 	1, 	0, 	0, 	29
+# KERNEL:                  104, 	0, 	0, 	0, 	0, 	1, 	1, 	1, 	0, 	0, 	1, 	0, 	0, 	29
+# KERNEL:                  104, 	1, 	0, 	0, 	0, 	1, 	1, 	1, 	0, 	0, 	1, 	0, 	0, 	28
+# KERNEL:                  105, 	0, 	0, 	0, 	0, 	1, 	1, 	1, 	0, 	0, 	1, 	0, 	0, 	28
+# KERNEL:                  105, 	1, 	0, 	0, 	0, 	1, 	1, 	1, 	0, 	0, 	1, 	0, 	0, 	27
+# KERNEL:                  106, 	0, 	0, 	0, 	0, 	1, 	1, 	1, 	0, 	0, 	1, 	0, 	0, 	27
+# KERNEL:                  106, 	1, 	0, 	0, 	0, 	1, 	1, 	1, 	0, 	0, 	1, 	0, 	0, 	26
+# KERNEL:                  107, 	0, 	0, 	0, 	0, 	1, 	1, 	1, 	0, 	0, 	1, 	0, 	0, 	26
+# KERNEL:                  107, 	1, 	0, 	0, 	0, 	1, 	1, 	1, 	0, 	0, 	1, 	0, 	0, 	25
+# KERNEL:                  108, 	0, 	0, 	0, 	0, 	1, 	1, 	1, 	0, 	0, 	1, 	0, 	0, 	25
+# KERNEL:                  108, 	1, 	0, 	0, 	0, 	1, 	1, 	1, 	0, 	0, 	1, 	0, 	0, 	24
+# KERNEL:                  109, 	0, 	0, 	0, 	0, 	1, 	1, 	1, 	0, 	0, 	1, 	0, 	0, 	24
+# KERNEL:                  109, 	1, 	0, 	0, 	0, 	1, 	1, 	1, 	0, 	0, 	1, 	0, 	0, 	23
+# KERNEL:                  110, 	0, 	0, 	0, 	0, 	1, 	1, 	1, 	0, 	0, 	1, 	0, 	0, 	23
+# KERNEL:                  110, 	1, 	0, 	0, 	0, 	1, 	1, 	1, 	0, 	0, 	1, 	0, 	0, 	22
+# KERNEL:                  111, 	0, 	0, 	0, 	0, 	1, 	1, 	1, 	0, 	0, 	1, 	0, 	0, 	22
+# KERNEL:                  111, 	1, 	0, 	0, 	0, 	1, 	1, 	1, 	0, 	0, 	1, 	0, 	0, 	21
+# KERNEL:                  112, 	0, 	0, 	0, 	0, 	1, 	1, 	1, 	0, 	0, 	1, 	0, 	0, 	21
+# KERNEL:                  112, 	1, 	0, 	0, 	0, 	1, 	1, 	1, 	0, 	0, 	1, 	0, 	0, 	20
+# KERNEL:                  113, 	0, 	0, 	0, 	0, 	1, 	1, 	1, 	0, 	0, 	1, 	0, 	0, 	20
+# KERNEL:                  113, 	1, 	0, 	0, 	0, 	1, 	1, 	1, 	0, 	0, 	1, 	0, 	0, 	19
+# KERNEL:                  114, 	0, 	0, 	0, 	0, 	1, 	1, 	1, 	0, 	0, 	1, 	0, 	0, 	19
+# KERNEL:                  114, 	1, 	0, 	0, 	0, 	1, 	1, 	1, 	0, 	0, 	1, 	0, 	0, 	18
+# KERNEL:                  115, 	0, 	0, 	0, 	0, 	1, 	1, 	1, 	0, 	0, 	1, 	0, 	0, 	18
+# KERNEL:                  115, 	1, 	0, 	0, 	0, 	1, 	1, 	1, 	0, 	0, 	1, 	0, 	0, 	17
+# KERNEL:                  116, 	0, 	0, 	0, 	0, 	1, 	1, 	1, 	0, 	0, 	1, 	0, 	0, 	17
+# KERNEL:                  116, 	1, 	0, 	0, 	0, 	1, 	1, 	1, 	0, 	0, 	1, 	0, 	0, 	16
+# KERNEL:                  117, 	0, 	0, 	0, 	0, 	1, 	1, 	1, 	0, 	0, 	1, 	0, 	0, 	16
+# KERNEL:                  117, 	1, 	0, 	0, 	0, 	1, 	1, 	1, 	0, 	0, 	1, 	0, 	0, 	15
+# KERNEL:                  118, 	0, 	0, 	0, 	0, 	1, 	1, 	1, 	0, 	0, 	1, 	0, 	0, 	15
+# KERNEL:                  118, 	1, 	0, 	0, 	0, 	1, 	1, 	1, 	0, 	0, 	1, 	0, 	0, 	14
+# KERNEL:                  119, 	0, 	0, 	0, 	0, 	1, 	1, 	1, 	0, 	0, 	1, 	0, 	0, 	14
+# KERNEL:                  119, 	1, 	0, 	0, 	0, 	1, 	1, 	1, 	0, 	0, 	1, 	0, 	0, 	13
+# KERNEL:                  120, 	0, 	0, 	0, 	0, 	1, 	1, 	1, 	0, 	0, 	1, 	0, 	0, 	13
+# KERNEL:                  120, 	1, 	0, 	0, 	0, 	1, 	1, 	1, 	0, 	0, 	1, 	0, 	0, 	12
+# KERNEL:                  121, 	0, 	0, 	0, 	0, 	1, 	1, 	1, 	0, 	0, 	1, 	0, 	0, 	12
+# KERNEL:                  121, 	1, 	0, 	0, 	0, 	1, 	1, 	1, 	0, 	0, 	1, 	0, 	0, 	11
+# KERNEL:                  122, 	0, 	0, 	0, 	0, 	1, 	1, 	1, 	0, 	0, 	1, 	0, 	0, 	11
+# KERNEL:                  122, 	1, 	0, 	0, 	0, 	1, 	1, 	1, 	0, 	0, 	1, 	0, 	0, 	10
+# KERNEL:                  123, 	0, 	0, 	0, 	0, 	1, 	1, 	1, 	0, 	0, 	1, 	0, 	0, 	10
+# KERNEL:                  123, 	1, 	0, 	0, 	0, 	1, 	1, 	1, 	0, 	0, 	1, 	0, 	0, 	 9
+# KERNEL:                  124, 	0, 	0, 	0, 	0, 	1, 	1, 	1, 	0, 	0, 	1, 	0, 	0, 	 9
+# KERNEL:                  124, 	1, 	0, 	0, 	0, 	1, 	1, 	1, 	0, 	0, 	1, 	0, 	0, 	 8
+# KERNEL:                  125, 	0, 	0, 	0, 	0, 	1, 	1, 	1, 	0, 	0, 	1, 	0, 	0, 	 8
+# KERNEL:                  125, 	1, 	0, 	0, 	0, 	1, 	1, 	1, 	0, 	0, 	1, 	0, 	0, 	 7
+# KERNEL:                  126, 	0, 	0, 	0, 	0, 	1, 	1, 	1, 	0, 	0, 	1, 	0, 	0, 	 7
+# KERNEL:                  126, 	1, 	0, 	0, 	0, 	1, 	1, 	1, 	0, 	0, 	1, 	0, 	0, 	 6
+# KERNEL:                  127, 	0, 	0, 	0, 	0, 	1, 	1, 	1, 	0, 	0, 	1, 	0, 	0, 	 6
+# KERNEL:                  127, 	1, 	0, 	0, 	0, 	1, 	1, 	1, 	0, 	0, 	1, 	0, 	0, 	 5
+# KERNEL:                  128, 	0, 	0, 	0, 	0, 	1, 	1, 	1, 	0, 	0, 	1, 	0, 	0, 	 5
+# KERNEL:                  128, 	1, 	0, 	1, 	0, 	1, 	1, 	1, 	0, 	0, 	1, 	0, 	0, 	 4
+# KERNEL:                  129, 	0, 	0, 	1, 	0, 	1, 	1, 	1, 	0, 	0, 	1, 	0, 	0, 	 4
+# KERNEL:                  129, 	1, 	0, 	0, 	0, 	1, 	1, 	1, 	0, 	0, 	1, 	0, 	0, 	 3
+# KERNEL:                  130, 	0, 	0, 	0, 	0, 	1, 	1, 	1, 	0, 	0, 	1, 	0, 	0, 	 3
+# KERNEL:                  130, 	1, 	0, 	0, 	0, 	1, 	1, 	1, 	0, 	1, 	0, 	0, 	0, 	 3
+# KERNEL:                  131, 	0, 	0, 	0, 	0, 	1, 	1, 	1, 	0, 	1, 	0, 	0, 	0, 	 3
+# KERNEL:                  131, 	1, 	0, 	0, 	0, 	1, 	1, 	1, 	0, 	1, 	0, 	0, 	1, 	 3
+# KERNEL:                  132, 	0, 	0, 	0, 	0, 	1, 	1, 	1, 	0, 	1, 	0, 	0, 	1, 	 3
+# KERNEL:                  132, 	1, 	0, 	0, 	0, 	1, 	1, 	1, 	0, 	0, 	0, 	0, 	1, 	 3
+# KERNEL:                  133, 	0, 	0, 	0, 	0, 	1, 	1, 	1, 	0, 	0, 	0, 	0, 	1, 	 3
+# KERNEL:                  133, 	1, 	0, 	0, 	0, 	1, 	0, 	1, 	0, 	0, 	0, 	0, 	0, 	 3
+# KERNEL:                  134, 	0, 	0, 	0, 	0, 	1, 	0, 	1, 	0, 	0, 	0, 	0, 	0, 	 3
+# KERNEL:                  134, 	1, 	0, 	0, 	0, 	1, 	0, 	1, 	1, 	0, 	0, 	0, 	1, 	 3
+# KERNEL:                  135, 	0, 	0, 	0, 	0, 	1, 	0, 	1, 	1, 	0, 	0, 	0, 	1, 	 3
+# KERNEL:                  135, 	1, 	0, 	0, 	0, 	1, 	0, 	1, 	0, 	0, 	0, 	0, 	1, 	 3
+# KERNEL:                  136, 	0, 	0, 	0, 	0, 	1, 	0, 	1, 	0, 	0, 	0, 	0, 	1, 	 3
+# KERNEL:                  136, 	1, 	0, 	0, 	0, 	1, 	1, 	1, 	0, 	0, 	0, 	0, 	1, 	 3
+# KERNEL:                  137, 	0, 	0, 	0, 	0, 	1, 	1, 	1, 	0, 	0, 	0, 	0, 	1, 	 3
+# KERNEL:                  137, 	1, 	0, 	0, 	0, 	1, 	1, 	0, 	0, 	0, 	0, 	0, 	1, 	 3
+# KERNEL:                  138, 	0, 	0, 	0, 	0, 	1, 	1, 	0, 	0, 	0, 	0, 	0, 	1, 	 3
+# KERNEL:                  138, 	1, 	0, 	0, 	0, 	1, 	1, 	0, 	1, 	0, 	0, 	0, 	1, 	 3
+# KERNEL:                  139, 	0, 	0, 	0, 	0, 	1, 	1, 	0, 	1, 	0, 	0, 	0, 	1, 	 3
+# KERNEL:                  139, 	1, 	1, 	0, 	0, 	1, 	1, 	0, 	0, 	0, 	0, 	0, 	1, 	 3
+# KERNEL:                  140, 	0, 	1, 	0, 	0, 	1, 	1, 	0, 	0, 	0, 	0, 	0, 	1, 	 3
+# KERNEL:                  140, 	1, 	1, 	0, 	0, 	1, 	1, 	0, 	0, 	0, 	0, 	0, 	0, 	 2
+# KERNEL:                  141, 	0, 	1, 	0, 	0, 	1, 	1, 	0, 	0, 	0, 	0, 	0, 	0, 	 2
+# KERNEL:                  141, 	1, 	1, 	0, 	0, 	1, 	1, 	0, 	0, 	0, 	0, 	0, 	1, 	 2
+# KERNEL:                  142, 	0, 	1, 	0, 	0, 	1, 	1, 	0, 	0, 	0, 	0, 	0, 	1, 	 2
+# KERNEL:                  142, 	1, 	1, 	0, 	0, 	1, 	1, 	0, 	0, 	0, 	0, 	0, 	1, 	 2
+# KERNEL:                  143, 	0, 	1, 	0, 	0, 	1, 	1, 	0, 	0, 	0, 	0, 	0, 	1, 	 2
+# KERNEL:                  143, 	1, 	1, 	0, 	0, 	1, 	1, 	0, 	0, 	0, 	0, 	0, 	1, 	 2
+# KERNEL:                  144, 	0, 	1, 	0, 	0, 	1, 	1, 	0, 	0, 	0, 	0, 	0, 	1, 	 2
+# KERNEL:                  144, 	1, 	1, 	0, 	1, 	1, 	1, 	0, 	0, 	0, 	0, 	0, 	1, 	 2
+# KERNEL:                  145, 	0, 	1, 	0, 	1, 	1, 	1, 	0, 	0, 	0, 	0, 	0, 	1, 	 2
+# KERNEL:                  145, 	1, 	1, 	0, 	1, 	1, 	1, 	0, 	0, 	0, 	0, 	0, 	1, 	 3
+# KERNEL:                  146, 	0, 	1, 	0, 	1, 	1, 	1, 	0, 	0, 	0, 	0, 	0, 	1, 	 3
+# KERNEL:                  146, 	1, 	1, 	0, 	1, 	1, 	1, 	0, 	0, 	0, 	0, 	0, 	0, 	 4
+# KERNEL:                  147, 	0, 	1, 	0, 	1, 	1, 	1, 	0, 	0, 	0, 	0, 	0, 	0, 	 4
+# KERNEL:                  147, 	1, 	1, 	0, 	1, 	1, 	1, 	0, 	0, 	0, 	0, 	0, 	0, 	 5
+# KERNEL:                  148, 	0, 	1, 	0, 	1, 	1, 	1, 	0, 	0, 	0, 	0, 	0, 	0, 	 5
+# KERNEL:                  148, 	1, 	1, 	0, 	1, 	1, 	1, 	0, 	0, 	0, 	0, 	0, 	0, 	 6
+# KERNEL:                  149, 	0, 	1, 	0, 	1, 	1, 	1, 	0, 	0, 	0, 	0, 	0, 	0, 	 6
+# KERNEL:                  149, 	1, 	1, 	0, 	1, 	1, 	1, 	0, 	0, 	0, 	0, 	0, 	0, 	 7
+# KERNEL:                  150, 	0, 	1, 	0, 	1, 	1, 	1, 	0, 	0, 	0, 	0, 	0, 	0, 	 7
+# KERNEL:                  150, 	1, 	1, 	0, 	1, 	1, 	1, 	0, 	0, 	0, 	0, 	0, 	0, 	 8
+# KERNEL:                  151, 	0, 	1, 	0, 	1, 	1, 	1, 	0, 	0, 	0, 	0, 	0, 	0, 	 8
+# KERNEL:                  151, 	1, 	1, 	0, 	1, 	1, 	1, 	0, 	0, 	0, 	0, 	0, 	0, 	 9
+# KERNEL:                  152, 	0, 	1, 	0, 	1, 	1, 	1, 	0, 	0, 	0, 	0, 	0, 	0, 	 9
+# KERNEL:                  152, 	1, 	1, 	0, 	0, 	1, 	1, 	0, 	0, 	0, 	0, 	0, 	0, 	10
+# KERNEL:                  153, 	0, 	1, 	0, 	0, 	1, 	1, 	0, 	0, 	0, 	0, 	0, 	0, 	10
+# KERNEL:                  153, 	1, 	1, 	0, 	0, 	1, 	1, 	0, 	0, 	0, 	0, 	0, 	0, 	 9
+# KERNEL:                  154, 	0, 	1, 	0, 	0, 	1, 	1, 	0, 	0, 	0, 	0, 	0, 	0, 	 9
+# KERNEL:                  154, 	1, 	1, 	0, 	0, 	1, 	1, 	0, 	0, 	0, 	0, 	0, 	0, 	 8
+# KERNEL:                  155, 	0, 	1, 	0, 	0, 	1, 	1, 	0, 	0, 	0, 	0, 	0, 	0, 	 8
+# KERNEL:                  155, 	1, 	1, 	0, 	0, 	1, 	1, 	0, 	0, 	0, 	0, 	0, 	0, 	 7
+# KERNEL:                  156, 	0, 	1, 	0, 	0, 	1, 	1, 	0, 	0, 	0, 	0, 	0, 	0, 	 7
+# KERNEL:                  156, 	1, 	1, 	0, 	0, 	1, 	1, 	0, 	0, 	0, 	0, 	0, 	0, 	 6
+# KERNEL:                  157, 	0, 	1, 	0, 	0, 	1, 	1, 	0, 	0, 	0, 	0, 	0, 	0, 	 6
+# KERNEL:                  157, 	1, 	1, 	0, 	0, 	1, 	1, 	0, 	0, 	0, 	0, 	0, 	0, 	 5
+# KERNEL:                  158, 	0, 	1, 	0, 	0, 	1, 	1, 	0, 	0, 	0, 	0, 	0, 	0, 	 5
+# KERNEL:                  158, 	1, 	1, 	0, 	0, 	1, 	1, 	0, 	0, 	0, 	0, 	0, 	0, 	 4
+# KERNEL:                  159, 	0, 	1, 	0, 	0, 	1, 	1, 	0, 	0, 	0, 	0, 	0, 	0, 	 4
+# KERNEL:                  159, 	1, 	1, 	0, 	0, 	1, 	1, 	0, 	0, 	0, 	0, 	0, 	0, 	 3
+# KERNEL:                  160, 	0, 	1, 	0, 	0, 	1, 	1, 	0, 	0, 	0, 	0, 	0, 	0, 	 3
+# KERNEL:                  160, 	1, 	1, 	0, 	0, 	1, 	1, 	0, 	0, 	0, 	0, 	0, 	0, 	 2
+# KERNEL:                  161, 	0, 	1, 	0, 	0, 	1, 	1, 	0, 	0, 	0, 	0, 	0, 	0, 	 2
+# KERNEL:                  161, 	1, 	1, 	0, 	0, 	1, 	1, 	0, 	0, 	0, 	0, 	0, 	1, 	 2
+# KERNEL:                  162, 	0, 	1, 	0, 	0, 	1, 	1, 	0, 	0, 	0, 	0, 	0, 	1, 	 2
+# KERNEL:                  162, 	1, 	1, 	0, 	0, 	1, 	1, 	0, 	0, 	0, 	0, 	0, 	1, 	 2
+# KERNEL:                  163, 	0, 	1, 	0, 	0, 	1, 	1, 	0, 	0, 	0, 	0, 	0, 	1, 	 2
+# KERNEL:                  163, 	1, 	1, 	0, 	0, 	1, 	1, 	0, 	0, 	0, 	0, 	0, 	1, 	 2
+# KERNEL:                  164, 	0, 	1, 	0, 	0, 	1, 	1, 	0, 	0, 	0, 	0, 	0, 	1, 	 2
+# KERNEL:                  164, 	1, 	1, 	0, 	0, 	1, 	1, 	0, 	0, 	0, 	0, 	0, 	1, 	 2
+# KERNEL:                  165, 	0, 	1, 	0, 	0, 	1, 	1, 	0, 	0, 	0, 	0, 	0, 	1, 	 2
+# KERNEL:                  165, 	1, 	1, 	0, 	0, 	1, 	1, 	0, 	0, 	0, 	0, 	0, 	1, 	 2
+# KERNEL:                  166, 	0, 	1, 	0, 	0, 	1, 	1, 	0, 	0, 	0, 	0, 	0, 	1, 	 2
+# KERNEL:                  166, 	1, 	1, 	0, 	0, 	1, 	1, 	0, 	0, 	0, 	0, 	0, 	1, 	 2
+# KERNEL:                  167, 	0, 	1, 	0, 	0, 	1, 	1, 	0, 	0, 	0, 	0, 	0, 	1, 	 2
+# KERNEL:                  167, 	1, 	1, 	0, 	0, 	1, 	1, 	0, 	0, 	0, 	0, 	0, 	1, 	 2
+# KERNEL:                  168, 	0, 	1, 	0, 	0, 	1, 	1, 	0, 	0, 	0, 	0, 	0, 	1, 	 2
+# KERNEL:                  168, 	1, 	1, 	0, 	0, 	1, 	1, 	0, 	0, 	0, 	0, 	0, 	1, 	 2
+# KERNEL:                  169, 	0, 	1, 	0, 	0, 	1, 	1, 	0, 	0, 	0, 	0, 	0, 	1, 	 2
+# KERNEL:                  169, 	1, 	1, 	0, 	0, 	1, 	1, 	0, 	0, 	0, 	0, 	0, 	1, 	 2
+# KERNEL:                  170, 	0, 	1, 	0, 	0, 	1, 	1, 	0, 	0, 	0, 	0, 	0, 	1, 	 2
+# KERNEL:                  170, 	1, 	1, 	0, 	0, 	1, 	1, 	0, 	0, 	0, 	0, 	0, 	1, 	 2
+# KERNEL:                  171, 	0, 	1, 	0, 	0, 	1, 	1, 	0, 	0, 	0, 	0, 	0, 	1, 	 2
+# KERNEL:                  171, 	1, 	1, 	0, 	0, 	1, 	1, 	0, 	0, 	0, 	0, 	0, 	1, 	 2
+# KERNEL:                  172, 	0, 	1, 	0, 	0, 	1, 	1, 	0, 	0, 	0, 	0, 	0, 	1, 	 2
+# KERNEL:                  172, 	1, 	1, 	0, 	0, 	1, 	1, 	0, 	0, 	0, 	0, 	0, 	1, 	 2
+# KERNEL:                  173, 	0, 	1, 	0, 	0, 	1, 	1, 	0, 	0, 	0, 	0, 	0, 	1, 	 2
+# KERNEL:                  173, 	1, 	1, 	0, 	0, 	1, 	1, 	0, 	0, 	0, 	0, 	0, 	1, 	 2
+# KERNEL:                  174, 	0, 	1, 	0, 	0, 	1, 	1, 	0, 	0, 	0, 	0, 	0, 	1, 	 2
+# KERNEL:                  174, 	1, 	1, 	0, 	0, 	1, 	1, 	0, 	0, 	0, 	0, 	0, 	1, 	 2
+# KERNEL:                  175, 	0, 	1, 	0, 	0, 	1, 	1, 	0, 	0, 	0, 	0, 	0, 	1, 	 2
+# KERNEL:                  175, 	1, 	1, 	0, 	0, 	1, 	1, 	0, 	0, 	0, 	0, 	0, 	1, 	 2
+# KERNEL:                  176, 	0, 	1, 	0, 	0, 	1, 	1, 	0, 	0, 	0, 	0, 	0, 	1, 	 2
+# KERNEL:                  176, 	1, 	1, 	0, 	0, 	1, 	1, 	0, 	0, 	0, 	0, 	0, 	1, 	 2
+# KERNEL:                  177, 	0, 	1, 	0, 	0, 	1, 	1, 	0, 	0, 	0, 	0, 	0, 	1, 	 2
+# KERNEL:                  177, 	1, 	1, 	0, 	0, 	1, 	1, 	0, 	0, 	0, 	0, 	0, 	1, 	 2
+# KERNEL:                  178, 	0, 	1, 	0, 	0, 	1, 	1, 	0, 	0, 	0, 	0, 	0, 	1, 	 2
+# KERNEL:                  178, 	1, 	1, 	0, 	0, 	1, 	1, 	0, 	0, 	0, 	0, 	0, 	1, 	 2
+# KERNEL:                  179, 	0, 	1, 	0, 	0, 	1, 	1, 	0, 	0, 	0, 	0, 	0, 	1, 	 2
+# KERNEL:                  179, 	1, 	1, 	0, 	0, 	1, 	1, 	0, 	0, 	0, 	0, 	0, 	1, 	 2
+# KERNEL:                  180, 	0, 	1, 	0, 	0, 	1, 	1, 	0, 	0, 	0, 	0, 	0, 	1, 	 2
+# KERNEL:                  180, 	1, 	1, 	0, 	0, 	1, 	1, 	0, 	0, 	0, 	0, 	0, 	1, 	 2
+# KERNEL:                  181, 	0, 	1, 	0, 	0, 	1, 	1, 	0, 	0, 	0, 	0, 	0, 	1, 	 2
+# KERNEL:                  181, 	1, 	1, 	0, 	0, 	1, 	1, 	0, 	0, 	0, 	0, 	0, 	1, 	 2
+# KERNEL:                  182, 	0, 	1, 	0, 	0, 	1, 	1, 	0, 	0, 	0, 	0, 	0, 	1, 	 2
+# KERNEL:                  182, 	1, 	1, 	0, 	0, 	1, 	1, 	0, 	0, 	0, 	0, 	0, 	1, 	 2
+# KERNEL:                  183, 	0, 	1, 	0, 	0, 	1, 	1, 	0, 	0, 	0, 	0, 	0, 	1, 	 2
+# KERNEL:                  183, 	1, 	1, 	0, 	0, 	1, 	1, 	0, 	0, 	0, 	0, 	0, 	1, 	 2
+# KERNEL:                  184, 	0, 	1, 	0, 	0, 	1, 	1, 	0, 	0, 	0, 	0, 	0, 	1, 	 2
+# KERNEL:                  184, 	1, 	1, 	0, 	0, 	1, 	1, 	0, 	0, 	0, 	0, 	0, 	1, 	 2
+# KERNEL:                  185, 	0, 	1, 	0, 	0, 	1, 	1, 	0, 	0, 	0, 	0, 	0, 	1, 	 2
+# KERNEL:                  185, 	1, 	1, 	0, 	0, 	1, 	1, 	0, 	0, 	0, 	0, 	0, 	1, 	 2
+# KERNEL:                  186, 	0, 	1, 	0, 	0, 	1, 	1, 	0, 	0, 	0, 	0, 	0, 	1, 	 2
+# KERNEL:                  186, 	1, 	1, 	0, 	0, 	1, 	1, 	0, 	0, 	0, 	0, 	0, 	1, 	 2
+# KERNEL:                  187, 	0, 	1, 	0, 	0, 	1, 	1, 	0, 	0, 	0, 	0, 	0, 	1, 	 2
+# KERNEL:                  187, 	1, 	1, 	0, 	0, 	1, 	1, 	0, 	0, 	0, 	0, 	0, 	1, 	 2
+# KERNEL:                  188, 	0, 	1, 	0, 	0, 	1, 	1, 	0, 	0, 	0, 	0, 	0, 	1, 	 2
+# KERNEL:                  188, 	1, 	1, 	0, 	0, 	1, 	1, 	0, 	0, 	0, 	0, 	0, 	1, 	 2
+# KERNEL:                  189, 	0, 	1, 	0, 	0, 	1, 	1, 	0, 	0, 	0, 	0, 	0, 	1, 	 2
+# KERNEL:                  189, 	1, 	1, 	0, 	0, 	1, 	1, 	0, 	0, 	0, 	0, 	0, 	1, 	 2
+# KERNEL:                  190, 	0, 	1, 	0, 	0, 	1, 	1, 	0, 	0, 	0, 	0, 	0, 	1, 	 2
+# KERNEL:                  190, 	1, 	1, 	0, 	0, 	1, 	1, 	0, 	0, 	0, 	0, 	0, 	1, 	 2
+# KERNEL:                  191, 	0, 	1, 	0, 	0, 	1, 	1, 	0, 	0, 	0, 	0, 	0, 	1, 	 2
+# KERNEL:                  191, 	1, 	1, 	0, 	0, 	1, 	1, 	0, 	0, 	0, 	0, 	0, 	1, 	 2
+# KERNEL:                  192, 	0, 	1, 	0, 	0, 	1, 	1, 	0, 	0, 	0, 	0, 	0, 	1, 	 2
+# KERNEL:                  192, 	1, 	1, 	0, 	0, 	1, 	1, 	0, 	0, 	0, 	0, 	0, 	1, 	 2
+# KERNEL:                  193, 	0, 	1, 	0, 	0, 	1, 	1, 	0, 	0, 	0, 	0, 	0, 	1, 	 2
+# KERNEL:                  193, 	1, 	1, 	0, 	0, 	1, 	1, 	0, 	0, 	0, 	0, 	0, 	1, 	 2
+# KERNEL:                  194, 	0, 	1, 	0, 	0, 	1, 	1, 	0, 	0, 	0, 	0, 	0, 	1, 	 2
+# KERNEL:                  194, 	1, 	1, 	0, 	0, 	1, 	1, 	0, 	0, 	0, 	0, 	0, 	1, 	 2
+# KERNEL:                  195, 	0, 	1, 	0, 	0, 	1, 	1, 	0, 	0, 	0, 	0, 	0, 	1, 	 2
+# KERNEL:                  195, 	1, 	1, 	0, 	0, 	1, 	1, 	0, 	0, 	0, 	0, 	0, 	1, 	 2
+# KERNEL:                  196, 	0, 	1, 	0, 	0, 	1, 	1, 	0, 	0, 	0, 	0, 	0, 	1, 	 2
+# KERNEL:                  196, 	1, 	1, 	0, 	0, 	1, 	1, 	0, 	0, 	0, 	0, 	0, 	1, 	 2
+# KERNEL:                  197, 	0, 	1, 	0, 	0, 	1, 	1, 	0, 	0, 	0, 	0, 	0, 	1, 	 2
+# KERNEL:                  197, 	1, 	1, 	0, 	0, 	1, 	1, 	0, 	0, 	0, 	0, 	0, 	1, 	 2
+# KERNEL:                  198, 	0, 	1, 	0, 	0, 	1, 	1, 	0, 	0, 	0, 	0, 	0, 	1, 	 2
+# KERNEL:                  198, 	1, 	1, 	0, 	0, 	1, 	1, 	0, 	0, 	0, 	0, 	0, 	1, 	 2
+# KERNEL:                  199, 	0, 	1, 	0, 	0, 	1, 	1, 	0, 	0, 	0, 	0, 	0, 	1, 	 2
+# KERNEL:                  199, 	1, 	1, 	0, 	0, 	1, 	1, 	0, 	0, 	0, 	0, 	0, 	1, 	 2
+# KERNEL:                  200, 	0, 	1, 	0, 	0, 	1, 	1, 	0, 	0, 	0, 	0, 	0, 	1, 	 2
+# KERNEL:                  200, 	1, 	1, 	0, 	0, 	1, 	1, 	0, 	0, 	0, 	0, 	0, 	1, 	 2
+# KERNEL:                  201, 	0, 	1, 	0, 	0, 	1, 	1, 	0, 	0, 	0, 	0, 	0, 	1, 	 2
+# KERNEL:                  201, 	1, 	1, 	0, 	0, 	1, 	1, 	0, 	0, 	0, 	0, 	0, 	1, 	 2
+# KERNEL:                  202, 	0, 	1, 	0, 	0, 	1, 	1, 	0, 	0, 	0, 	0, 	0, 	1, 	 2
+# RUNTIME: RUNTIME_0068 RE_control_TB.v (97): $finish called.
+# KERNEL: Time: 202 ms,  Iteration: 0,  Instance: /RE_control_TB,  Process: @INITIAL#61_4@.
+# KERNEL: stopped at time: 202 ms
+alog -O2 -sve  -work digi_cam $dsn/src/RE_control.v $dsn/src/RE_control_TB.v
+# Warning: The source is compiled without the -dbg switch. Line breakpoints and code coverage will not be available.
+# Compile...
+# Pass 1. Scanning modules hierarchy.
+# Info: VCP2113 Module \$root found in current working library.
+# Pass 2. Processing instantiations.
+# Pass 3. Processing behavioral statements.
+# Parameters in case labels, will not check for overlapping labels (c:/My_Designs/digi_cam/digi_cam/src/RE_control.v, ln 69).
+# Parameters in case labels, will not check for overlapping labels (c:/My_Designs/digi_cam/digi_cam/src/RE_control.v, ln 176).
+# Running Optimizer.
+# ELB/DAG code generating.
+# Info: VCP2113 Module \$root found in current working library.
+# Unit top modules: RE_control_TB.
+# $root top modules: RE_control_TB.
+# Compile success 0 Errors 0 Warnings  Analysis time: 1[s].
+# done
+#  Simulation has been stopped
+# Adding file c:\My_Designs\digi_cam\digi_cam\src\RE_control_TB_sim.awc ... Done
